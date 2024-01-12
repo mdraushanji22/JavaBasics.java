@@ -1,24 +1,16 @@
-import java.util.*;
-public class JavaBasics {
-public static void main (String[] args){
-    // How to take input in java
-    Scanner sc = new Scanner(System.in);
-
-    String name = sc.nextLine();
-
-    System.out.println(name);
-
-    int number = sc.nextInt();
-
-    System.out.println(number);
-
-    float ft = sc.nextFloat();
-
-    System.out.println(ft);
-
-    boolean bl = sc.nextBoolean();
-
-    System.out.println(bl);
-
-}
+import java.util.Scanner;
+public  class JavaBasics {
+    public static void main ( String args[]){
+        Scanner sc = new Scanner(System.in);
+        int size = sc.nextInt();
+        int [] numbers = new int[size];
+        //Input
+        for (int i=0; i<size; i++){
+            numbers [i]= sc.nextInt();
+        }
+        //otput
+        for (int i=0; i<size; i++){
+            System.out.println(numbers[i]);
+        }
+    }
 }
